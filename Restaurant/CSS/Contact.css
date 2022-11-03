@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behaviour: smooth;
+}
+
+:root {
+    --navbar-height: 59px;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    cursor: pointer;
+}
+
+.nav-list {
+    width: 70%;
+    display: flex;
+}
+
+.nav-list li {
+    list-style: none;
+    padding: 2px 6px;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: white;
+}
+
+.rightNav {
+    width: 50;
+    text-align: right;
+}
+
+#search {
+    padding: 5px;
+    font-size: 17px;
+    border: 2px solid rgb(230, 166, 166);
+    border-radius: 9px;
+}
+
+.background {
+    background-blend-mode: darken;
+    background-size: cover;
+}
+
+.firstsection {
+    height: 100vh;
+}
+
+.nav-flex-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: absolute;
+    z-index: 100;
+    left: 0;
+    width: 100%;
+    padding: 0;
+}
+
+.nav-flex-row li {
+    text-decoration: none;
+    list-style-type: none;
+    padding: 20px 15px;
+}
+
+.nav-flex-row li a {
+    font-family: bold;
+    color: white;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+.firstHalf {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.firstHalf img {
+    display: flex;
+    border-radius: 9050px;
+}
+
+.text-big {
+    font-family: "Piazzolla", serif;
+    font-weight: bold;
+    font-size: 41px;
+    text-align: center;
+    color: white;
+    margin-left: 45%;
+}
+
+.text-small {
+    font-family: "Sansita Swashed", cursive;
+    font-size: 18px;
+    text-align: center;
+    color: white;
+    margin-left: 45%;
+
+}
+
+#service {
+    margin: 34px;
+    display: flex;
+}
+
+#service .box {
+    padding: 45px;
+    margin: 3px 6px;
+    border-radius: 28px;
+}
+
+#service .box img {
+    margin-top: 20px;
+    height: 100px;
+    margin: auto;
+    display: block;
+    border-radius: 200px;
+}
+
+#service .box p {
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.center {
+    text-align: center;
+}
+
+.positiond {
+    position: absolute;
+    top: 35%;
+    left: 30%;
+}

@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width>, initial-scale=1.0">
+  <title>Typescript</title>
+</head>
+
+<body onload="somefunc()">
+  <center>
+    <h1>Typescript Assignments</h1>
+  </center>
+  <!--Question 1-->
+  <section>
+    <div>
+      <h4>1) Complete the following MyArray class in TypeScript that can handle string and number only to get
+        the expected results
+        Barebone class definition
+        class MyArray {
+        add(value) {
+        this.collection.push(value)
+        }
+        remove(value) {}
+        getValues() {
+        return this.collection
+        }
+        }
+        Expected results
+        const stringAry = new MyArray()
+        stringAry.add('aaa')
+        stringAry.add('bbb')
+        stringAry.add('ccc')
+        stringAry.remove('bbb')
+        console.log(stringAry.getValues()) //=> [ 'aaa', 'ccc' ]
+        const numberAry = new MyArray()
+        numberAry.add(1)
+        numberAry.add(2)
+        numberAry.add(3)
+        numberAry.remove(2)
+        console.log(numberAry.getValues()) //=> [ 1, 3 ]
+        const booleanAry = new MyArray()
+        numberAry.add(true)
+        numberAry.add(false) //=> You shouldn't be able to do these.</h4>
+      <h3 id="one" class="ml-5"></h3>
+      <h3 id="one_one" class="ml-5"></h3>
+    </div>
+    <hr>
+  </section>
+  <!--Question 2-->
+  <section>
+    <div>
+      <h4>2) Create an arrow function that takes an object with default values. Here're the interface and
+        expected results.
+        interface Params {
+        firstParam: string
+        secondParam: string
+        }
+        console.log(myFunc()) //=> { firstParam: 'defaultFirst', secondParam:
+        'defaultSecond' } // The default values are returned when args not given.
+        console.log(myFunc({ firstParam: 'first', secondParam: 'second' })) //=> {
+        firstParam: 'first', secondParam: 'second' } // The given values are
+        returned when args given.
+        console.log(myFunc({ firstParam: 'first' })) //=> { firstParam: 'first',
+        secondParam: 'defaultSecond' }
+        console.log(myFunc({ secondParam: 'second' })) //=> { firstParam:
+        'defaultFirst', secondParam: 'second' }
+      </h4>
+      <h3 id="two" class="ml-5"></h3>
+      <h3 id="two_one" class="ml-5"></h3>
+      <h3 id="two_two" class="ml-5"></h3>
+      <h3 id="two_three" class="ml-5"></h3>
+    </div>
+    <hr>
+  </section>
+  <!--Question 3-->
+  <section>
+    <div>
+      <h4>3) Complete the following function called validator, that takes an optional function argument. It
+        caches the response and return it when there's.
+        Given interface and function definitions
+        interface CustomResponse {
+        valid: boolean
+        error: string
+        }
+        const errorResponse = (): CustomResponse => {
+        return { valid: false, error: 'error occurred' }
+        }
+        // Complete this fuction to work described in the following expected
+        results. const validator = ( validatorFn?: () => CustomResponse ):
+        CustomResponse => { }
+        Expected results
+        console.log(validator(() => errorResponse()).valid) //=> false
+        console.log(validator().error) //=> 'error occurred'
+      </h4>
+      <h3 id="three" class="ml-5"></h3>
+      <h3 id="three_one" class="ml-5"></h3>
+    </div>
+    <hr>
+  </section>
+  <!--Question 4-->
+  <section>
+    <div>
+      <h4>4) write typescript code with following requirements (design proper classes). The requirements have
+        suggestions for fields and methods, you are free to add more as per your thinking
+        Bank Account
+        fields: id, firstName, lastName, address, phone, email, type (saving/current)
+        methods: createAccount, updateAccount, deleteAccount
+        Transaction
+        fields: date, type, amount, customerId
+        methods: depositFunds, withdrawFunds
+      </h4>
+      <h3 id="four" class="ml-5"></h3>
+      <p>Output is on console</p>
+    </div>
+    <hr>
+  </section>
+  <!--Question 5-->
+  <section>
+    <div>
+      <h4>5) Write a program that asks the user how many days are in a particular month, and what day of the
+        week the month begins on (0 for Monday, 1 for Tuesday, etc), and then prints a calendar for that
+        month. For example, here is the output for a 30-day month that begins on day 4 (Thursday)</h4>
+      <p id="five" class="ml-5"></p>
+      <p id="five_one" class="ml-5"></p>
+      <p>Output is on console</p>
+    </div>
+    <hr>
+  </section>
+  <!--Question 6-->
+  <section>
+    <div>
+      <h4>6) Write a program that contains a function that has one parameter, n, representing an integer greater
+        than 0. The function should return n! (n factorial). Then write a main function that calls this function
+        with the values 1 through 20, one at a time, printing the returned results. This is what your output
+        should look like:
+        126
+        24
+        120
+        720
+        5040
+        40320
+        362880
+        36288002
+      </h4>
+      <h3 id="six" class="ml-5"></h3>
+      <button onclick="main()">Factorial</button>
+    </div>
+    <hr>
+  </section>
+  <!--Question 7-->
+  <section>
+    <div>
+      <h4>7) Use inheritance
+        Write a class Course with name,fees. Provide following functionalities
+        initializer
+        Accept data
+        Print Data .
+        Write a Class Computer with subjectList.
+        Provide following functionalities
+        initializer
+        Accept data
+        Print Data .
+        Write a Class Electonics with subjectList.
+        Provide following functionalities
+        initializer
+        Accept data
+        Print Data</h4>
+      <h3 id="seven" class="ml-5"></h3>
+    </div>
+    <hr>
+  </section>
+  <!--Question 8-->
+  <section>
+    <div>
+      <h4>8) A pangram is a sentence that contains all the letters of the English alphabet at least once, for
+        example: The quick brown fox jumps over the lazy dog. Your task here is to write a function to
+        check a sentence to see if it is a pangram or not.</h4>
+      <h3 id="eight" class="ml-5"></h3>
+      <h3 id="eight_one" class="ml-5"></h3>
+    </div>
+    <hr>
+  </section>
+  <!--Question 9-->
+  <section>
+    <div>
+      <h4>9)Write a function translate() that will translate a text into "rövarspråket" (Swedish for "robber's
+        language"). That is, double every consonant and place an occurrence of "o" in between. For
+        example, translate("this is fun") should return the string "tothohisos isos fofunon".
+      </h4>
+      <h3 id="nine" class="ml-5"></h3>
+      <h3 id="nine_one" class="ml-5"></h3>
+    </div>
+    <hr>
+  </section>
+  <!--Question 10-->
+  <section>
+    <div>
+      <h4>10) Create a class 'Student' with rollno, studentName, course ,dictionary of marks(subjectName -
+        >marks [5]).
+        Provide following functionalities
+        initializer
+        override str method
+        accept student data
+        Print student data for given id.
+        Print Student who has failed in any subject.
+        Write menu driven console program to test above functionalities.( accept records of 5 students
+        and store those in list )
+      </h4>
+      <h3 id="ten" class="ml-5"></h3>
+      <p>Output is on console</p>
+    </div>
+    <hr>
+  </section>
+  <!--Question 11-->
+  <section>
+    <div>
+      <h4>11) Write a program to Interchange First and Last Element of a List</h4>
+      <h3 id="eleven" class="ml-5"></h3>
+      <h3 id="eleven_one" class="ml-5"></h3>
+    </div>
+    <hr>
+  </section>
+  <!--Question 12-->
+  <section>
+    <div>
+      <h4>12) Write a python program to print sum of tuple elements
+      </h4>
+      <h3 id="twelve" class="ml-5"></h3>
+      <h3 id="twelve_one" class="ml-5"></h3>
+    </div>
+    <hr>
+  </section>
+  <!--Question 13-->
+  <section>
+    <div>
+      <h4>13) Replace single element 'b' in given list ['a', 'b', 'c', 'd', 'e'] with [1, 2, 3]
+      </h4>
+      <h3 id="thirteen" class="ml-5"></h3>
+      <h3 id="thirteen_one" class="ml-5"></h3>
+    </div>
+    <hr>
+  </section>
+  <!--Question 14-->
+  <section>
+    <div>
+      <h4>14) write a program to find index of element 'e' in given vowels list ['a', 'e', 'i', 'o', 'i', 'u']
+      </h4>
+      <h3 id="fourteen" class="ml-5"></h3>
+      <h3 id="fourteen_one" class="ml-5"></h3>
+    </div>
+    <hr>
+  </section>
+  <!--Question 15-->
+  <section>
+    <div>
+      <h4>15) Accept the full name from user(Name Middlename Surname) in lowercase and Print it in title case.
+        NOTE:(Using in-built function)</h4>
+      <h3 id="fifteen" class="ml-5"></h3>
+      <h3 id="fifteen_one" class="ml-5"></h3>
+    </div>
+    <hr>
+  </section>
+  <script>
+    function somefunc() {
+      const stringAry = new MyArray()
+      stringAry.add('aaa')
+      stringAry.add('bbb')
+      stringAry.add('ccc')
+      stringAry.remove('bbb')
+      const numberAry = new MyArray()
+      numberAry.add(1)
+      numberAry.add(2)
+      numberAry.add(3)
+      numberAry.remove(2)
+      const c1 = new Computer('Computer', 400000, ['JavaSript', 'Html/CSS', 'Data Structure'])
+      const nlist = [1, 2, 3, 4, 5, 6]
+      let tuple = [10, 20, 30, 40, 50]
+      let li = ['a', 'b', 'c', 'd', 'e']
+      const vowellist = ['a', 'e', 'i', 'o', 'i', 'u']
+      document.getElementById("one").innerHTML = stringAry.getValues();
+      document.getElementById("one_one").innerHTML = numberAry.getValues();
+      document.getElementById("two").innerHTML = myFunc({})
+      document.getElementById("two_one").innerHTML = myFunc({ firstParam: 'first', secondParam: 'second' })
+      document.getElementById("two_two").innerHTML = myFunc({ firstParam: 'first' })
+      document.getElementById("two_three").innerHTML = myFunc({ secondParam: 'second' })
+      document.getElementById("three").innerHTML = validator(() => errorResponse()).valid
+      document.getElementById("three_one").innerHTML = validator().error
+      document.getElementById("seven").innerHTML = JSON.stringify(c1);
+      document.getElementById("eight").innerHTML = pangrams('The quick brown fox jumps over the lazy dog')
+      document.getElementById("eight_one").innerHTML = pangrams('Hi This is Ashwini')
+      document.getElementById("nine").innerHTML = (`rövarspråket String:` + translate('this is fun'))
+      document.getElementById("eleven").innerHTML = (`Before swapping : ${nlist}`)
+      document.getElementById("eleven_one").innerHTML = (`After swapping : ${swap(nlist)}`)
+      document.getElementById("twelve").innerHTML = (`tuple : ${tuple}`)
+      document.getElementById("twelve_one").innerHTML = (`sum of tuple: ${display(tuple)}`)
+      document.getElementById("thirteen").innerHTML = (`Before replacing :${li}`)
+      document.getElementById("thirteen_one").innerHTML = (`After replacing :${replac(li)}`)
+      document.getElementById("fourteen").innerHTML = (`vowel list :${vowellist}`)
+      document.getElementById("fourteen_one").innerHTML = (`index of e = ${index(vowellist)}`)
+      document.getElementById("fifteen").innerHTML = (`ashwini deepak kaujalgikar`)
+      document.getElementById("fifteen_one").innerHTML = (toTitleCase(`ashwini deepak kaujalgikar`))
+
+    }
+  </script>
+  <script src="script\js\Question1.js"></script>
+  <script src="script\js\Question2.js"></script>
+  <script src="script\js\Question3.js"></script>
+  <script src="script\js\Question4.js"></script>
+  <script src="script\js\Question5.js"></script>
+  <script src="script\js\Question6.js"></script>
+  <script src="script\js\Question7.js"></script>
+  <script src="script\js\Question8.js"></script>
+  <script src="script\js\Question9.js"></script>
+  <script src="script\js\Question10.js"></script>
+  <script src="script\js\Question11.js"></script>
+  <script src="script\js\Question12.js"></script>
+  <script src="script\js\Question13.js"></script>
+  <script src="script\js\Question14.js"></script>
+  <script src="script\js\Question15.js"></script>
+</body>
+
+</html>
